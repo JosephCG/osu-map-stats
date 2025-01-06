@@ -1,4 +1,5 @@
 REALTIME BUILD REQUIRES TOSU!!!!!!! https://github.com/tosuapp/tosu
+ALSO ONLY WORKS ON STABLE!!!!!!
 
 mapbymap works by selecting the .osu file of maps found in your songs folder
 
