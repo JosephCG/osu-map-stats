@@ -66,3 +66,25 @@ def print_stats(nomod_stats,bpm, jump_stats, stream_stats, rhythm_stats):
     if rhythm_stats:
         print(f"Longest Rhythm Pattern: {rhythm_stats[0]} , {rhythm_stats[1]}")
 
+def mods(input, cs):
+    speedbonus = 1
+    circles = cs
+    #these are the difficulty changing mods in the game
+    timemods = ["nc", "dt", "double time", "nightcore", "halftime", "ht"]
+    time_mod_count = sum(mod in input for mod in timemods)
+    diff_mods = ["ez", "easy", "hr", "hardrock"]
+    diff_mod_count = sum(mod in input for mod in diff_mods)
+    if "hardrock" in input or "hr" in input:
+        circles = cs * 1.3
+    if "ez" in input or "easy" in input:
+        circles = cs * .5
+    if "nc" in input or "nightcore" in input:
+        speedbonus = 1.5
+    if "dt" in input or "doubletime" in input:
+        speedbonus = 1.5
+    if "ht" in input or "halftime" in input:
+        speedbonus = .75
+    if diff_mod_count >1 or time_mod_count >1:
+        circles = cs
+        speedbonus = 1
+    return circles , speedbonus
