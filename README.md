@@ -28,3 +28,12 @@ a single will not break the rhythm pattern if followed by another double or grea
 is counted as 2 different patterns and marked as
 1-5-1
 1-5-1
+
+get_files has the function for the user to select the map manually, and also the function that extracts bpm/cs/title for some reason
+transform_data includes the functions that converts .osu files to more readable lists, and that more readable list into other more specified lists for easier data extraction for the stats.
+also a lot of functions in this file aren't used.  they were made for more extraction of more otherr stats like angles and accelaration, but i didnt bother using that build for now
+
+getting_stats has the functions that extract the map stats from iterated lists
+
+presenting_stats has functions for asking user input for converting mods for multipliers, printing the stats, and updating the stats given mods and cs 
+
