@@ -2,11 +2,9 @@ import tkinter as tk
 from tkinter import filedialog
 import math
 import os
-import osu
 import re
 import json
 import sys
-from oauth2client.service_account import ServiceAccountCredentials
 
 def transform_hitobjects(osu_file_path):
     with open(osu_file_path, 'r', encoding='utf-8') as file:
@@ -396,7 +394,7 @@ def get_rhythm_pattern_time(transformed_data, timesig):
     if current:
         rhythm_patterns.append((start_time, current))    
     return rhythm_patterns
-
+# everything past here isnt used yet, for extra stats build 
 def get_rhythm_pattern_plus(transformed_data, timesig):
     rhythm_patterns = []
     jump_list = []

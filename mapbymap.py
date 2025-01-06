@@ -1,11 +1,8 @@
 from get_files import get_osu_file, extract_metadata
 from transform_data import transform_hitobjects, get_jump_streaks_time, get_accstream_streaks, get_rhythm_pattern_time
 from getting_stats import get_jump_statistics, get_streams_stats, calculate_flowaim, get_rhythm_stats
-from savedata import save_transformed_data_to_file, save_jump_to_file, save_stream_to_file, save_rhythm_to_file
-from presentingstats import update_velocity_stats, print_stats, mods, get_googlelist, find_highest_blank_row, authenticate_google_sheets, open_google_sheet
-
+from presentingstats import update_velocity_stats, print_stats
 def main():
-    folder_path = r"C:\Users\imjos\OneDrive\Desktop\thon"
     osu_file_path = get_osu_file()
     #   # Get the file path from the dialog
     time_sig, size, title = extract_metadata(osu_file_path)
@@ -19,7 +16,6 @@ def main():
         maxbpm = int(input("Max bpm: "))
         time_sig = [60000/maxbpm, 60000/minbpm]
     transformation = transform_hitobjects(osu_file_path)
-    save_transformed_data_to_file(transformation, output_file="transformed_hit_objects.txt")
     # Jump statistics
     jump_data = get_jump_streaks_time(transformation, time_sig)
     save_jump_to_file(jump_data, title)

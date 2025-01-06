@@ -2,11 +2,9 @@ import tkinter as tk
 from tkinter import filedialog
 import math
 import os
-import osu
 import re
 import json
 import sys
-from oauth2client.service_account import ServiceAccountCredentials
 
 
 #finds bpm cs and title
