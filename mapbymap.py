@@ -1,7 +1,7 @@
 from get_files import get_osu_file, extract_metadata
 from transform_data import transform_hitobjects, get_jump_streaks_time, get_accstream_streaks, get_rhythm_pattern_time
 from getting_stats import get_jump_statistics, get_streams_stats, calculate_flowaim, get_rhythm_stats
-from presentingstats import update_velocity_stats, print_stats
+from presentingstats import update_velocity_stats, print_stats, mods
 def main():
     osu_file_path = get_osu_file()
     #   # Get the file path from the dialog
