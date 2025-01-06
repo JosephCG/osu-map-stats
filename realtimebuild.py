@@ -17,7 +17,10 @@ def analyze_osu_file(osu_file_path, gamemods):
         timebonus = 1  # Default timebonus
         if any(mod in gamemods for mod in ["DT", "NC"]):  # Check for either "DT" or "NC"
             timebonus = 1.5
-            print("DT/NC mod detected, Timebonus applied.")
+        if "EZ" in gamemods:
+            size *= .5
+        if "HT" in gamemods:
+            timebonus = .75
 
         bpm = [round(60000 / x * timebonus)  for x in time_sig]
         
