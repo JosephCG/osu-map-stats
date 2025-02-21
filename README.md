@@ -1,5 +1,6 @@
-REALTIME BUILD REQUIRES TOSU!!!!!!! https://github.com/tosuapp/tosu
-ALSO ONLY WORKS ON STABLE!!!!!!
+realtimebuild requires tosu!!!!!!! https://github.com/tosuapp/tosu
+also only works on stable!!!!!!
+need to do pip install sockets for real time build
 
 mapbymap works by selecting the .osu file of maps found in your songs folder
 
