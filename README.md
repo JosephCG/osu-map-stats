@@ -1,8 +1,30 @@
-realtimebuild requires tosu!!!!!!! https://github.com/tosuapp/tosu
-also only works on stable!!!!!!
-need to do pip install sockets for real time build
+HOW TO RUN:
+- Download tosu (https://github.com/tosuapp/tosu/releases/latest) and run the tosu.exe file
+- Make sure you have Python installed (https://www.python.org/)
+- To run: install dependencies (pip install websockets)
+- Run: python realtimebuild.py
 
-mapbymap works by selecting the .osu file of maps found in your songs folder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+about data extraction
+
 
 Once you run the program you will often see that there is often an extra number paired with the stat, this is an associated stat giving more detail and context of the stat
 Listing the associated stats here, the normal stats should be obvious i hope idk
