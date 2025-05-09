@@ -1,6 +1,5 @@
 HOW TO RUN:
-- Download tosu (https://github.com/tosuapp/tosu/releases/latest) and run the tosu.exe file
-- Make sure you have Python installed (https://www.python.org/)
+- Download tosu (https://github.com/tosuapp/tosu/releases/latest) and run the tosu.exe file- 
 - To run: install dependencies (pip install websockets)
 - Run: python realtimebuild.py
 
